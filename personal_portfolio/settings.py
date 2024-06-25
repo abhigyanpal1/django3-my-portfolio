@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^%mqd1j6e(^i&g!q&qq5a_e8=f3(ftzmtvpssubs$5486okm@6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['abhigyan1.pythonanywhere.com']
 
 
 # Application definition
@@ -118,7 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
+STATIC_ROOT = BASE_DIR / 'static'
 MEDIA_URL = 'media/'# photo ke liye url kya hoga
 MEDIA_ROOT = BASE_DIR / 'media' #photo kaha store hogi
 
